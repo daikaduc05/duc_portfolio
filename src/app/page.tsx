@@ -1,66 +1,66 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import { Hero } from "@/components/Hero";
+import {
+  AboutSection,
+  SkillsSection,
+  CareerSection,
+  ProjectsSection,
+  AwardsSection,
+  ContactSection,
+} from "@/components/Sections";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Home Section */}
+      <section id="home" className="min-h-screen flex items-center pt-20">
+        <div className="max-w-7xl mx-auto px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Hero Section */}
+            <div className="order-2 lg:order-1">
+              <Hero />
+            </div>
+
+            {/* Right: Profile Image */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Circular Frame */}
+                <div className="absolute inset-0 rounded-full border-4 border-gray-800 opacity-50 scale-110"></div>
+
+                {/* Profile Image */}
+                <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-gray-700">
+                  <Image
+                    src="/images/avatar.png"
+                    alt="Profile Picture"
+                    width={384}
+                    height={384}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Skills Section */}
+      <SkillsSection />
+
+      {/* Career Section */}
+      <CareerSection />
+
+      {/* Projects Section */}
+      <ProjectsSection />
+
+      {/* Awards Section */}
+      <AwardsSection />
+
+      {/* Contact Section */}
+      <ContactSection />
+    </>
   );
 }
