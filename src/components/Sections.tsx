@@ -948,7 +948,7 @@ export function ContactSection() {
               </div>
               <div className="flex gap-4 mt-8">
                 <a
-                  href="https://leetcode.com/"
+                  href="https://leetcode.com/u/daikaduc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded bg-gray-800 flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors"
@@ -966,7 +966,7 @@ export function ContactSection() {
                   <Terminal className="w-6 h-6 text-white" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/duc-dang-hoai-b15647177/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded bg-gray-800 flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors"

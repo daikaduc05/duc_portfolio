@@ -31,7 +31,7 @@ export function Hero() {
       {/* Social Icons */}
       <div className="flex gap-4 mb-8 slide-up" style={{ animationDelay: "0.9s" }}>
         <a
-          href="https://leetcode.com/"
+          href="https://leetcode.com/u/daikaduc/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors"
@@ -49,7 +49,7 @@ export function Hero() {
           <Terminal className="w-5 h-5 text-white" />
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/duc-dang-hoai-b15647177/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors"
